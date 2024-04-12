@@ -35,7 +35,7 @@ app.initializers.add('nodeloc/flarum-ext-read-permission', () => {
         showPermissionModal = false;
       }
       // check user permission
-      if(parseInt(app.session.user!.attribute('read_permission')) >= discussion.attribute('readPermission')) {
+      if(parseInt(app.session?.user?.attribute('read_permission')) >= discussion.attribute('readPermission')) {
         showPermissionModal = false;
       }
     }
